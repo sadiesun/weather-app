@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/df92a63b38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="card border-primary mb-3"
+        style="width: 50rem; height: 30rem; top: 4rem;"
+      >
+        <div class="card-body">
+          <form id="city-form">
+              <div class="mb-2">
+                <input type="text" class="form-control" id="city-input" placeholder="Enter a city">                
+                <button type="submit" class="btn btn-outline-success search-button">Search</button>
+                <button type="button" id="current-button" class="btn btn-primary current-button">Current</button>
+              </div> 
+            </form>
+          
+       <h1 id="city"> 
+         Buffalo, NY 
+       </h1>
+       <h2>
+        <i class="far fa-sun sun-icon"></i>
+        <span class="degrees"
+        id="temperature"> 48</span>
+       </h2>
+         <span class="units">
+           <a href=# id="celsius">
+            °C
+            </a>
+         </span>
+              <ul class="wind-rain">
+                <li id="weather">
+                  Sunny
+                </li>
+                <li id="humid">
+                  Humidity: 50%
+                </li>
+                  <li id="wind">
+                    Wind: 5mph
+                  </li>
+               </ul>
+         <div class="current" id= "day-time">
+           Sunday, 8:00PM
+          </div>
+      <div class="row">
+          <div class="col-2 day">
+            Mon
+              <div class="card border-info mb-3" style="width: 7rem;">
+                  <div class="card-body">
+                    <i class="fas fa-cloud-sun cloud-sun"></i>
+                    <p class="card-text">40</p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-2 day">
+            Tues
+              <div class="card border-info mb-3" style="width: 7rem;">
+                  <div class="card-body">
+                    <i class="fas fa-cloud-showers-heavy rain-icon"></i>
+                    <p class="card-text">44</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-2 day">
+            Wed
+              <div class="card border-info mb-3" style="width: 7rem;">
+                  <div class="card-body">
+                    <i class="far fa-sun sun"></i>
+                    <p class="card-text">56</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-2 day">
+            Thurs
+              <div class="card border-info mb-3" style="width: 7rem;">
+                  <div class="card-body">
+                    <i class="fas fa-cloud cloudy"></i>
+                    <p class="card-text">53</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-2 day">
+            Fri
+              <div class="card border-info mb-3" style="width: 7rem;">
+                  <div class="card-body">
+                    <i class="far fa-sun sun"></i>
+                    <p class="card-text">58</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-2 day">
+              Sat
+                <div class="card border-info mb-3" style="width: 7rem;">
+                    <div class="card-body">
+                      <i class="far fa-sun sun"></i>
+                      <p class="card-text">58</p>
+                    </div>
+        </div>
+      </div>
+</div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
