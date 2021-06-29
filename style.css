@@ -1,97 +1,84 @@
-h1 {
-    text-align: center;
-    top: -20px;
-    padding-top: 0px;
-  }
-  h2 {
-    text-align: center;
-    font-family: "Farro", sans-serif;
-    margin-block-start: 0em;
-  }
-  p {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .degrees {
-    font-size: 70px;
-    font-weight: 500;
-  }
-  
-  #city-input {
-    width: 450px;
-  }
-  .search-button {
-    position: relative;
-    top: -38px;
-    left: 465px;
-    display: block;
-  }
-  .current-button {
-    position: relative;
-    top: -76px;
-    left: 550px;
-    display: block;
-    background: #fff;
-    color: #0e5ed7;
-  }
-  .units {
-    text-align: center;
-    position: relative;
-    left: 470px;
-    top: -100px;
-    font-size: 40px;
-    color: black;
-  }
-  #farenheit,
-  #celsius {
-    text-decoration: none;
-    font-weight: 500;
-  }
-  #farenheit,
-  #celsius click {
-    color: purple;
-  }
-  #farenheit,
-  #celsius hover {
-    cursor: pointer;
-  }
-  .sun-icon {
-    font-size: 70px;
-    color: orange;
-  }
-  .cloud-sun,
-  .rain-icon,
-  .sun,
-  .cloudy {
-    font-size: 50px;
-    text-align: center;
-  }
-  .wind-rain {
-    font-size: 18px;
-    text-align: right;
-    position: relative;
-    top: -150px;
-    left: -20px;
-    list-style-type: none;
-    font-weight: 500;
-  }
-  .lower {
-    margin: 0;
-    padding: 0;
-  }
-  #weather {
-    font-size: 25px;
-    top: -300px;
-  }
-  .day {
-    text-align: center;
-    padding-top: 0;
-  }
-  #day-time {
-    font-size: 25px;
-    position: relative;
-    top: -160px;
-    font-weight: 500;
-    text-align: center;
-  }
+p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.middle {
+  list-style-type: none;
+  line-height: 0;
+}
+.degrees {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+#city-input {
+  width: 450px;
+}
+.search-button {
+  position: relative;
+  top: -38px;
+  left: 465px;
+  display: block;
+}
+.current-button {
+  position: relative;
+  top: -38px;
+  left: 475px;
+  display: block;
+  background: #fff;
+  color: #0e5ed7;
+}
+
+#farenheit,
+#celsius {
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  top: -60px;
+  left: 160px;
+  font-size: 40px;
+  color: black;
+}
+#farenheit,
+#celsius click {
+  color: purple;
+}
+#farenheit,
+#celsius hover {
+  cursor: pointer;
+}
+.sun-icon {
+  font-size: 70px;
+  color: orange;
+}
+.cloud-sun,
+.rain-icon,
+.sun,
+.cloudy {
+  font-size: 50px;
+  text-align: center;
+}
+.wind-rain {
+  font-size: 18px;
+  list-style-type: none;
+  font-weight: 500;
+}
+.lower {
+  margin: 0;
+  padding: 0;
+}
+#weather {
+  font-size: 25px;
+  top: -300px;
+}
+.day {
+  text-align: center;
+  padding-top: 0;
+}
+#day-time {
+  font-size: 25px;
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+}
