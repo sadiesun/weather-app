@@ -12,7 +12,7 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/df92a63b38.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
@@ -34,16 +34,18 @@
               </div>
               <div class="col">
                   <h1 id="city"> 
-                      Buffalo, NY 
+                      Buffalo 
                     </h1>
                   <ul class="middle">
-                      <li>
-                          <i class="far fa-sun sun-icon"></i>
+                      <li class= "the-weather">
+                        <span>
+                          <img src="http://openweathermap.org/img/wn/10d@2x.png" id="current-icon"></img></span>
                           <span class="degrees" id="temperature"> 48 </span>
           
                             <a href=# id="celsius">
                                °C
-                               </a><a href=# id="farenheit">
+                               </a>
+                               <a href=# id="farenheit">
                                |°F</a>
                               
                               </span>
@@ -127,7 +129,7 @@
     <small>
       This project was coded by Sadie Sunshine <a href= https://github.com/sadiesun/weather-app target="_blank"> is open sourced on GitHub</a>
     </small>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
 

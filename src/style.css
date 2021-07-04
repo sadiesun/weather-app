@@ -10,6 +10,10 @@ p {
 .degrees {
   font-size: 70px;
   font-weight: 500;
+  text-align:center;
+  position: relative;
+  top:-60px;
+  left:80px;
 }
 
 #city-input {
@@ -32,24 +36,27 @@ p {
   background: #fff;
   color: #0e5ed7;
 }
-
+#current-icon {
+  display: block;
+  text-align: left;
+}
 #farenheit,
 #celsius {
   text-decoration: none;
   font-weight: 500;
   position: relative;
-  top: -60px;
-  left: 160px;
-  font-size: 20px;
+  top: -90px;
+  left:75px;
+  font-size: 30px;
   color: black;
 }
 #farenheit,
 #celsius hover {
   cursor: pointer;
 }
-.sun-icon {
-  font-size: 70px;
-  color: orange;
+.the-weather{
+  position:relative;
+  left: -50px;
 }
 .cloud-sun,
 .rain-icon,
@@ -79,5 +86,5 @@ p {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
-  padding:10px;
+  padding:40 40px;
 }
