@@ -42,18 +42,13 @@ p {
 }
 #farenheit,
 #celsius {
-  text-decoration: none;
   font-weight: 500;
   position: relative;
   top: -90px;
   left:75px;
   font-size: 30px;
-  color: black;
 }
-#farenheit,
-#celsius hover {
-  cursor: pointer;
-}
+
 .the-weather{
   position:relative;
   left: -50px;
@@ -87,4 +82,11 @@ p {
   font-weight: 500;
   text-align: center;
   padding:40 40px;
+}
+.active {
+color: black;
+cursor: default;
+}
+.active:hover{
+  text-decoration: none;
 }

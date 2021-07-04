@@ -45,12 +45,16 @@ function showFarenheitTemperature(event) {
   event.preventDefault();
   let farenheitTemperature= (celsiusTemperature * 9)/5 + 32;
 let temperatureElement=document.querySelector("#temperature");
+farenheitConversion.classList.add("active");
+celsiusConversion.classList.remove("active");
 temperatureElement.innerHTML=Math.round(farenheitTemperature);
 
 }
 function showCelsius(event){
   event.preventDefault();
   let temperatureElement=document.querySelector("#temperature");
+  celsiusConversion.classList.add("active");
+  farenheitConversion.classList.remove("active");
   temperatureElement.innerHTML=Math.round(celsiusTemperature);
 }
 
