@@ -29,6 +29,7 @@ function displayWeather(response) {
   document.querySelector(
     "#humid"
   ).innerHTML = `Humidity: ${response.data.main.humidity}`;
+  celsiusTemperature= response.data.main.temp;
   document.querySelector("#weather").innerHTML = response.data.weather[0].main;
   let iconElement=document.querySelector("#current-icon");
   iconElement.setAttribute(
@@ -39,6 +40,26 @@ function displayWeather(response) {
 
 
 }
+
+function showFarenheitTemperature(event) {
+  event.preventDefault();
+  let farenheitTemperature= (celsiusTemperature * 9)/5 + 32;
+let temperatureElement=document.querySelector("#temperature");
+temperatureElement.innerHTML=Math.round(farenheitTemperature);
+
+}
+function showCelsius(event){
+  event.preventDefault();
+  let temperatureElement=document.querySelector("#temperature");
+  temperatureElement.innerHTML=Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature= null;
+let celsiusConversion=document.querySelector("#celsius");
+celsiusConversion.addEventListener("click",showCelsius);
+
+let farenheitConversion=document.querySelector("#farenheit");
+farenheitConversion.addEventListener("click",showFarenheitTemperature);
 
 function searchCity(city) {
   let apiKey = "b4f2234053365d7dcbed82a7cae1d5ac";
