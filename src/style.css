@@ -3,6 +3,9 @@ p {
   font-size: 20px;
   font-weight: 500;
 }
+#fullcard {
+  background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
 .middle {
   list-style-type: none;
   line-height: 0;
@@ -99,5 +102,8 @@ cursor: default;
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
+}
+#sixday{
+background: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
