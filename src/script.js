@@ -141,3 +141,5 @@ function getCurrentCity(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+searchCity("New York");
+displayForecast();
