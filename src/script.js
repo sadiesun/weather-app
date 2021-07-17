@@ -25,10 +25,10 @@ function displayWeather(response) {
   );
   document.querySelector(
     "#wind"
-  ).innerHTML = `Wind: ${response.data.wind.speed}`;
+  ).innerHTML = `Wind: ${response.data.wind.speed} mph`;
   document.querySelector(
     "#humid"
-  ).innerHTML = `Humidity: ${response.data.main.humidity}`;
+  ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
   celsiusTemperature= response.data.main.temp;
   document.querySelector("#weather").innerHTML = response.data.weather[0].main;
   let iconElement=document.querySelector("#current-icon");
